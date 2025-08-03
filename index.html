@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إحصائيات الطلاب</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>إحصائيات الطلاب</h1>
+            <p>تابع أحدث التحديثات في نقاط الطلاب وتصنيفاتهم</p>
+        </header>
+        
+        <div class="nav-buttons">
+            <button class="nav-btn active" data-target="participants">
+                <i class="fas fa-users"></i> جدول الطلاب
+            </button>
+            <button class="nav-btn" data-target="top3">
+                <i class="fas fa-trophy"></i> أفضل 3 طلاب
+            </button>
+            <button class="nav-btn" data-target="contact">
+                <i class="fas fa-envelope"></i> التواصل
+            </button>
+        </div>
+        
+        <!-- قسم الطلاب -->
+        <section id="participants" class="section active">
+            <h2 class="section-title"><i class="fas fa-table"></i> جدول الطلاب</h2>
+            <table class="participants-table">
+                <thead>
+                    <tr>
+                        <th>المركز</th>
+                        <th>اسم الطالب</th>
+                        <th>النقاط الإجمالية</th>
+                        <th>نقاط الأسبوع</th>
+                        <th>تغيير المركز</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>طالب 1</td>
+                        <td>1,850</td>
+                        <td>+120</td>
+                        <td><span class="rank-change rank-up"><i class="fas fa-arrow-up"></i> صعد مركزين</span></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>طالب 2</td>
+                        <td>1,790</td>
+                        <td>+95</td>
+                        <td><span class="rank-change rank-down"><i class="fas fa-arrow-down"></i> هبط مركز</span></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>طالب 3</td>
+                        <td>1,720</td>
+                        <td>+110</td>
+                        <td><span class="rank-change rank-up"><i class="fas fa-arrow-up"></i> صعد مركز</span></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>طالب 4</td>
+                        <td>1,680</td>
+                        <td>+85</td>
+                        <td><span class="rank-change rank-same"><i class="fas fa-minus"></i> بلا تغيير</span></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>طالب 5</td>
+                        <td>1,620</td>
+                        <td>+130</td>
+                        <td><span class="rank-change rank-up"><i class="fas fa-arrow-up"></i> صعد 3 مراكز</span></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>طالب 6</td>
+                        <td>1,590</td>
+                        <td>+75</td>
+                        <td><span class="rank-change rank-down"><i class="fas fa-arrow-down"></i> هبط مركزين</span></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>طالب 7</td>
+                        <td>1,540</td>
+                        <td>+90</td>
+                        <td><span class="rank-change rank-same"><i class="fas fa-minus"></i> بلا تغيير</span></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>طالب 8</td>
+                        <td>1,510</td>
+                        <td>+105</td>
+                        <td><span class="rank-change rank-up"><i class="fas fa-arrow-up"></i> صعد مركز</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- قسم التوب 3 -->
+        <section id="top3" class="section">
+            <h2 class="section-title"><i class="fas fa-crown"></i> أفضل 3 طلاب</h2>
+            <div class="top-three">
+                <div class="top-card first">
+                    <div class="medal">🥇</div>
+                    <h3>طالب 1</h3>
+                    <p><i class="fas fa-star"></i> المركز الأول</p>
+                    <p><i class="fas fa-coins"></i> النقاط: 1,850</p>
+                    <p><i class="fas fa-chart-line"></i> +120 نقطة هذا الأسبوع</p>
+                    <p><i class="fas fa-arrow-up"></i> صعد مركزين</p>
+                </div>
+                
+                <div class="top-card second">
+                    <div class="medal">🥈</div>
+                    <h3>طالب 2</h3>
+                    <p><i class="fas fa-star"></i> المركز الثاني</p>
+                    <p><i class="fas fa-coins"></i> النقاط: 1,790</p>
+                    <p><i class="fas fa-chart-line"></i> +95 نقطة هذا الأسبوع</p>
+                    <p><i class="fas fa-arrow-down"></i> هبط مركز</p>
+                </div>
+                
+                <div class="top-card third">
+                    <div class="medal">🥉</div>
+                    <h3>طالب 3</h3>
+                    <p><i class="fas fa-star"></i> المركز الثالث</p>
+                    <p><i class="fas fa-coins"></i> النقاط: 1,720</p>
+                    <p><i class="fas fa-chart-line"></i> +110 نقطة هذا الأسبوع</p>
+                    <p><i class="fas fa-arrow-up"></i> صعد مركز</span></p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- قسم التواصل -->
+        <section id="contact" class="section">
+            <h2 class="section-title"><i class="fas fa-comments"></i> تواصل معنا</h2>
+            <p class="contact-description">
+                لديك استفسار أو اقتراح؟ تواصل معنا عبر قنواتنا الاجتماعية
+            </p>
+            
+            <div class="social-buttons">
+                <a href="#" class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    صفحتنا على فيسبوك
+                </a>
+                <a href="#" class="social-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                    حسابنا على تويتر
+                </a>
+                <a href="#" class="social-btn instagram">
+                    <i class="fab fa-instagram"></i>
+                    حسابنا على إنستغرام
+                </a>
+            </div>
+            
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> البريد الإلكتروني: contact@example.com</p>
+                <p><i class="fas fa-phone"></i> الهاتف: 0123456789 </p>
+                <p><i class="fas fa-map-marker-alt"></i> العنوان: مصر</p>
+            </div>
+        </section>
+        
+        <footer>
+            <p>جميع الحقوق محفوظة &copy; 2023 | نظام إحصائيات الطلاب</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
